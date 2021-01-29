@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <title>Sign in and Sign up</title>
@@ -31,7 +32,7 @@
             </div>
 
             <div class="formgroup">
-                <form action="" id="loginform">
+                <form action="/" id="loginform">
                     <label for="username">användarnamn</label>
                     <input type="text" id="username" required>
                     <label for="password">lösenord</label>
@@ -39,13 +40,13 @@
                     <input type="button" value="Sign in" class="signin">
                 </form>
 
-                <form action="" id="registerform">
+                <form action="/" id="registerform">
                     <label for="användarnamn">användarnamn</label>
                     <input type="text" id="användarnamn" required>
                     <label for="email">mejl</label>
                     <input type="text" id="email" required>
-                    <label for="passwword">lösenord</label>
-                    <input type="password" id="password" required>
+                    <label for="password2">lösenord</label>
+                    <input type="password" id="password2" required>
                     <label for="confirmpassword">bekräfta lösenord</label>
                     <input type="password" id="confirmpassword" required>
                     <input type="button" value="Sign Up" class="signup">
@@ -73,16 +74,10 @@
                <h2 class="logo-text">Länkar</h2>
                <br>
                <ul>
-                   <a href="#">
-                       <li>Event</li>
-                    </a>
-                   <a href="#">
-                       <li>Fotoalbum</li>
-                    </a>
-                   <a href="#">
-                       <li>FAQ</li>
-                    </a>
-               </ul>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Fotoalbum</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
            </div>
 
            <div class="footer-section contact-form">
@@ -103,6 +98,6 @@
             &copy; Simons Portfolio | Designed by Simon Karvonen
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
