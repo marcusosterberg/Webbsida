@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in and Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Hem</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Om mig</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="login.html">Logga in</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-register">
+            <div class="navigation">
+                <button id="loginbutton" class='active' >Logga in</button>
+                <button id="registerbutton">Registrera</button>
+            </div>
+
+            <div class="formgroup">
+                <form action="" id="loginform">
+                    <label for="username">användarnamn</label>
+                    <input type="text" id="username" required>
+                    <label for="password">lösenord</label>
+                    <input type="password" id="password" required>
+                    <input type="button" value="Sign in" class="signin">
+                </form>
+
+                <form action="" id="registerform">
+                    <label for="användarnamn">användarnamn</label>
+                    <input type="text" id="användarnamn" required>
+                    <label for="email">mejl</label>
+                    <input type="text" id="email" required>
+                    <label for="passwword">lösenord</label>
+                    <input type="password" id="password" required>
+                    <label for="confirmpassword">bekräfta lösenord</label>
+                    <input type="password" id="confirmpassword" required>
+                    <input type="button" value="Sign Up" class="signup">
+                </form>
+            </div>
+
+            <div id="forgotpw">
+                <a href="" class="forgotpw-style">Glömt ditt lösenord?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+           <div class="footer-section about">
+                <h1 class="logo-text"><span>Simons</span> Portfolio</h1>
+                <p>Mitt namn är Simon Karvonen och jag är 22 år.<br>Jag studerar till Fullstack utvecklare på SKY.</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &#9743; 070 356 66 95</span>
+                    <span><i class="fas fa-envelope"></i> &#9993; simonoskarkarvonen@gmail.com</span>
+                </div>
+           </div>
+           
+           <div class="footer-section links">
+               <h2 class="logo-text">Länkar</h2>
+               <br>
+               <ul>
+                   <a href="#">
+                       <li>Event</li>
+                    </a>
+                   <a href="#">
+                       <li>Fotoalbum</li>
+                    </a>
+                   <a href="#">
+                       <li>FAQ</li>
+                    </a>
+               </ul>
+           </div>
+
+           <div class="footer-section contact-form">
+               <h2>Kontakt</h2>
+               <br>
+               <form action="index.html" method="post">
+                   <input type="email" name="email" class="text-input contact-input" placeholder="Din mejl">
+                   <textarea name="message" class="text-input contact-input" placeholder="Ditt meddelande"></textarea>
+                   <button type="submit" class="btn btn-big contact-btn">
+                       <i class="fas fa-envelope">&#9993;</i>
+                        Skicka
+                    </button>
+               </form>
+           </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; Simons Portfolio | Designed by Simon Karvonen
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
